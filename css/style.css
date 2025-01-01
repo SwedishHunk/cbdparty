@@ -1,0 +1,46 @@
+/* Grundläggande reset */
+body, h1, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Styling för menyn */
+header {
+    background-color: #333; /* Mörk bakgrundsfärg */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+/* Styling för menyn */
+.menu a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #ebff00; /* Gul färg vid hover */
+}
+
+/* Styling för inaktiverad FAQ-länk */
+.disabled {
+    color: gray;
+    pointer-events: none;
+    cursor: default;
+}
